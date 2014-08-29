@@ -208,6 +208,21 @@ input[type="submit"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+#main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em; }
+
+html, body {
+  height: 100%; }
+
+.push {
+  height: 17em; }
+  @media screen and (min-width: 53.75em) {
+    .push {
+      height: 4em; } }
+
 .texture {
   height: 5em;
   width: 100%; }
@@ -628,6 +643,116 @@ section.home {
       margin-left: 4.9em;
       margin-bottom: 2em; }
     section.home .bullets h2 {
+      font-size: 1.4em;
+      padding-top: 0.5em;
+      margin-bottom: 0.58333em;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+      display: inline-block; }
+
+section.about {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.about:after {
+    content: "";
+    display: table;
+    clear: both; }
+  section.about .hero {
+    margin-top: 2.5em; }
+  section.about button {
+    border: 1px solid #005f2e;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #0ae977;
+    color: white;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    background-color: #00a651;
+    background-image: -webkit-linear-gradient(#00a651, #006e36);
+    background-image: linear-gradient(#00a651, #006e36);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #004a24;
+    background-clip: padding-box;
+    font-size: 1em;
+    margin-top: 0.625em;
+    outline: none; }
+    section.about button:hover:not(:disabled) {
+      box-shadow: inset 0 1px 0 0 #07b95e;
+      cursor: pointer;
+      background-color: #038a45;
+      background-image: -webkit-linear-gradient(#038a45, #005f2e);
+      background-image: linear-gradient(#038a45, #005f2e); }
+    section.about button:active:not(:disabled), section.about button:focus:not(:disabled) {
+      border: 1px solid #005f2e;
+      box-shadow: inset 0 0 8px 4px #004f27, inset 0 0 8px 4px #004f27; }
+    section.about button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed; }
+  section.about .bullets {
+    margin-top: 2.5em;
+    margin-bottom: 1.5em; }
+    section.about .bullets:after {
+      content: "";
+      display: table;
+      clear: both; }
+    section.about .bullets .two-col-bullet {
+      background: white;
+      padding: 1em;
+      box-shadow: 0 1px 4px 1px #DDD; }
+      @media screen and (min-width: 53.75em) {
+        section.about .bullets .two-col-bullet {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          section.about .bullets .two-col-bullet:last-child {
+            margin-right: 0; }
+          section.about .bullets .two-col-bullet:nth-child(2n) {
+            margin-right: 0; }
+          section.about .bullets .two-col-bullet:nth-child(2n+1) {
+            clear: left; } }
+    @media screen and (min-width: 53.75em) {
+      section.about .bullets .three-col-bullet {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        section.about .bullets .three-col-bullet:last-child {
+          margin-right: 0; }
+        section.about .bullets .three-col-bullet:nth-child(3n) {
+          margin-right: 0; }
+        section.about .bullets .three-col-bullet:nth-child(3n+1) {
+          clear: left; } }
+    @media screen and (min-width: 53.75em) {
+      section.about .bullets .four-col-bullet {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        section.about .bullets .four-col-bullet:last-child {
+          margin-right: 0; }
+        section.about .bullets .four-col-bullet:nth-child(4n) {
+          margin-right: 0; }
+        section.about .bullets .four-col-bullet:nth-child(4n+1) {
+          clear: left; } }
+    section.about .bullets .bullet-icon {
+      float: left;
+      background: #477DCA;
+      padding: 0.875em;
+      border-radius: 50%;
+      width: 3.5em;
+      height: 3.5em; }
+    section.about .bullets .bullet-icon-1 {
+      background: #477DCA; }
+    section.about .bullets .bullet-icon-2 {
+      background: #47caaa; }
+    section.about .bullets .bullet-icon-3 {
+      background: #a9ca47; }
+    section.about .bullets .bullet-content {
+      margin-left: 4.9em;
+      margin-bottom: 2em; }
+    section.about .bullets h2 {
       font-size: 1.4em;
       padding-top: 0.5em;
       margin-bottom: 0.58333em;
