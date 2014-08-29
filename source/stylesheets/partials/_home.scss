@@ -1,0 +1,98 @@
+section.home {
+  @include outer-container;
+    .hero {
+    $hero-background-top: $green; 
+    $hero-background-bottom: adjust-hue($hero-background-top, -5);
+    $hero-color: white;
+    $gradient-angle: 10deg;
+
+    @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+
+    margin-top: em(40);
+    padding-bottom: 1em;
+
+    @include media($medium-screen) {
+      @include span-columns(8);
+    }
+
+    .hero-logo img {
+      float: left;
+    }
+
+    .hero-inner {
+      @include outer-container;
+      @include clearfix;
+      padding: 3em;
+      padding-bottom: 1em;
+      margin: auto;
+      text-align: center;
+      color: $hero-color;
+
+      button {
+        @include button(simple, $green);
+        font-size: $base-font-size;
+        outline: none;
+      }
+
+      .hero-copy {
+        text-align: center;
+        
+        h1 {
+          font-size: 1.6em;
+          margin-bottom: .5em;
+
+          @include media($large-screen) {
+            font-size: 1.8em;
+          }
+        }
+
+        p {
+          font-family: $serif;
+          margin: auto;
+          margin-bottom: 3em; 
+          font-weight: 200;
+          line-height: 1.4em;
+
+          @include media($medium-screen) {
+            font-size: 1.1em;
+          }
+        }
+      }
+    }
+  } // end of hero
+
+  .news {
+    margin-top: em(20);
+    @include media($medium-screen) {
+      @include span-columns(4);
+      @include omega();
+      min-height: 283px;
+    }
+
+    background-color: white;
+    .news-inner {
+      padding-top: .75em;
+      padding-bottom: .75em;
+      h2 {
+        font-size: $base-font-size * 1.2;
+        text-align: center;
+        @include media($medium-screen) {
+          font-size: $base-font-size * 2;
+        }
+      }
+      p {
+        margin-left: 1.75em;
+        margin-top: em(10);
+        @include media($medium-screen) {
+          padding-left: 1em;
+        }
+      }
+    }
+  } // end of news
+  
+} // end of section
