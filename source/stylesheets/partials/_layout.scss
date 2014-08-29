@@ -1,0 +1,13 @@
+.texture {
+  height: 5em;
+  width: 100%;
+}
+
+.texture-normal {
+  @include texture(180deg, lighten(#DDF0EF, 1), darken(#DDF0EF, 1), 64, 1); 
+// gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
+  // float: left;
+  // height: 5em;
+  // width: 50%;
+}
+

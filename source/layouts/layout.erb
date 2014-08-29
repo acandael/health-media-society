@@ -17,10 +17,11 @@
     <%= javascript_include_tag  "all" %>
   </head>
   
-  <body class="<%= page_classes %>">
-    <div id="main" role="main">
+  <body class="<%= page_classes %> texture">
+    <div id="main" role="main" class="texture-normal">
       <%= partial "partials/nav" %>
       <%= yield %>
     </div>
+    <%= partial "partials/footer" %>
   </body>
 </html>
