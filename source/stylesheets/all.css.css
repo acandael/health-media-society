@@ -759,6 +759,58 @@ section.about {
       border-bottom: 1px solid rgba(51, 51, 51, 0.2);
       display: inline-block; }
 
+section.people {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.people:after {
+    content: "";
+    display: table;
+    clear: both; }
+  section.people .lead {
+    margin-bottom: 1.25em;
+    padding: .75em;
+    background-color: white;
+    box-shadow: 0 1px 4px 1px #DDD;
+    overflow: hidden; }
+    section.people .lead h1 {
+      text-align: center;
+      margin-bottom: 0.625em; }
+    @media screen and (min-width: 40em) {
+      section.people .lead {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-top: 2.5em;
+        padding-left: 3em;
+        padding-right: 3em; }
+        section.people .lead:last-child {
+          margin-right: 0; } }
+  section.people .member {
+    background-color: white;
+    padding: 0.625em;
+    box-shadow: 0 1px 4px 1px #b4b6a9,2px 2px 1px 0 #fff inset;
+    margin-bottom: 1.25em; }
+    @media screen and (min-width: 40em) {
+      section.people .member {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        section.people .member:last-child {
+          margin-right: 0; }
+        section.people .member:nth-child(4n) {
+          margin-right: 0; }
+        section.people .member:nth-child(4n+1) {
+          clear: left; } }
+    section.people .member h5 {
+      font-size: 18px;
+      border-bottom: 1px solid #cfd1c6;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      text-align: center; }
+
 .footer-2 {
   background: #116239;
   padding: 1.5em;
