@@ -21,6 +21,16 @@ html, body {
   width: 100%;
 }
 
+i {
+  color: $green;
+  &.right {
+    margin-left: em(10);
+  }
+  &.left {
+    margin-right: em(10);
+  }
+}
+
 .texture-normal {
   @include texture(180deg, lighten(#DDF0EF, 1), darken(#DDF0EF, 1), 64, 1); 
 // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
