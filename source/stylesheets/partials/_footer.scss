@@ -18,6 +18,13 @@
       float: left;
       margin-bottom: 0;
     }
+
+    .logo-text {
+      float: right;
+      margin-left: em(10);
+      font-weight: bold;
+      color: $footer-link-color;
+    }
   }
 
   .footer-logo img {

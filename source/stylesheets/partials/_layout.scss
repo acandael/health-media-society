@@ -13,6 +13,7 @@ html, body {
   height: 17em;
   @include media($large-screen) {
    height: 4em;
+   padding: 4em;
   }
 }
 
