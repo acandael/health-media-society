@@ -37,6 +37,14 @@ header.navigation {
       max-height: $navigation-height;
       padding: .8em 0;
     }
+
+    .logo-text {
+      float: right;
+      line-height: $navigation-height;
+      margin-left: em(10);
+      color: $navigation-color;
+      font-weight: bold;
+    }
   }
 
   .navigation-menu-button {
