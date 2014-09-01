@@ -12,22 +12,25 @@ section.research_theme {
      background: inherit;
      box-shadow: none;
      @include media($medium-screen) {
-       @include span-columns(6 of 12);
+       @include span-columns(8 of 12);
      }
      h1 {
        //font-size: $base-font-size * 1.5;
        margin-top: 0;
      }
 
-     a.publink {
+     a {
        text-decoration: underline;
+     }
+
+     li {
+       line-height: $base-line-height * .5;
      }
    }
    aside {
 
      margin-top: em(40);
      @include media($medium-screen) {
-       @include shift(2);
        @include span-columns(4 of 12);
      }
 
