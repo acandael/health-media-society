@@ -1,0 +1,40 @@
+section.research_theme {
+ .hero {
+   margin-top: em(40);
+   margin-bottom: em(40);
+   @include clearfix;
+   background: white;
+   box-shadow: 0 1px 4px 1px $light-gray;
+   @include media($medium-screen) {
+     @include span-columns(12);
+   }
+   article {
+     background: inherit;
+     box-shadow: none;
+     @include media($medium-screen) {
+       @include span-columns(6 of 12);
+     }
+     h1 {
+       //font-size: $base-font-size * 1.5;
+       margin-top: 0;
+     }
+
+     a.publink {
+       text-decoration: underline;
+     }
+   }
+   aside {
+
+     margin-top: em(40);
+     @include media($medium-screen) {
+       @include shift(2);
+       @include span-columns(4 of 12);
+     }
+
+     img {
+       border: 1px solid $light-gray;
+       padding: 3px;
+     }
+   }
+ }
+}

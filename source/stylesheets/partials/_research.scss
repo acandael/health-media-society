@@ -31,7 +31,7 @@ section.researchthemes {
         padding-top: em(20);
       }
 
-      a {
+      p > a, li > a {
         text-decoration: underline;
       }
 
