@@ -1,0 +1,21 @@
+section.publications {
+  @include outer-container;
+  .hero {
+    margin-top: em(40);
+    margin-bottom: em(40);
+    text-align: center;
+  }
+
+  .theme {
+    background: white;
+    padding: 2em;
+    overflow: hidden;
+    margin-top: em(20);
+    margin-bottom: em(40);
+    box-shadow: 0 1px 4px 1px $light-gray;
+
+    h2 {
+      margin-bottom: em(10);
+    }
+  }
+}
