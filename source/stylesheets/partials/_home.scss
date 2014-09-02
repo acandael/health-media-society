@@ -23,6 +23,10 @@ section.home {
 
     .hero-logo img {
       float: left;
+      display: none;
+      @include media($medium-screen) {
+        display: block;
+      }
     }
 
     .hero-inner {

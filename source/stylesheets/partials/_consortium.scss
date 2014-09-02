@@ -1,0 +1,28 @@
+section.consortium {
+  @include outer-container;
+
+  margin-top: em(40);
+
+  .hero {
+    margin-bottom: em(20);
+    padding: .75em;
+    background-color: white;
+    box-shadow: 0 1px 4px 1px $light-gray;
+    overflow: hidden;
+    h1 {
+      text-align: center;
+      margin-bottom: em(10);
+    }
+  }
+  
+  article {
+    .research-group {
+      @include clearfix;
+      clear: both;
+      margin-bottom: em(40);
+      h3 {
+        font-size: $base-font-size * 1.2;
+      }
+    }
+  }
+}
