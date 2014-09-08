@@ -1,10 +1,5 @@
 section.publications {
   @include outer-container;
-  .hero {
-    margin-top: em(40);
-    margin-bottom: em(40);
-    text-align: center;
-  }
 
   .theme {
     background: white;

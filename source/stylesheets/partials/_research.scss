@@ -1,11 +1,5 @@
 section.researchthemes {
   @include outer-container;
-  padding: 1em;
-  .hero {
-    margin-top: em(20);
-    margin-bottom: em(40);
-    text-align: center;
-  }
   div.bullets {
     $icon-bullet-size: 3.5em;
     overflow: auto;
