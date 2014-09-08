@@ -20,13 +20,12 @@ section.about {
     margin-bottom: $base-line-height;
 
     
-    .two-col-bullet {
+    .one-col-bullet {
       background: white;
       padding: 1em;
       box-shadow: 0 1px 4px 1px $light-gray;
       @include media($large-screen) {
-        @include span-columns(6);
-        @include omega(2n);  
+        @include span-columns(8);
       } 
     }
     
