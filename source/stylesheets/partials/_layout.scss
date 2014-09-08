@@ -9,12 +9,16 @@ html, body {
   height: 100%;
 }
 
-header {
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
-  text-align: center;
+section {
+  header {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    text-align: center;
+  }
+  h1 {
+    color: darken($green, 10);
+  }
 }
-
 .push {
   height: 17em;
   @include media($large-screen) {
