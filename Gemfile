@@ -16,3 +16,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem 'bitters', '~> 0.10.0'
 gem 'bourbon', '~> 4.0.2'
 gem 'neat', '~> 1.6.0'
+
+gem 'middleman-search_engine_sitemap', '~> 1.1.0'

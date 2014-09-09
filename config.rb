@@ -53,6 +53,10 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :url_root, 'http://interpreter-violations-81175.bitballoon.com'
+
+activate :search_engine_sitemap
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -69,4 +73,24 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  #
 end
+
+#Filewatcher ignore list
+set :file_watcher_ignore,[
+    /^bin(\/|$)/,
+    /^\.bundle(\/|$)/,
+#        /^vendor(\/|$)/,
+    /^node_modules(\/|$)/,
+    /^\.sass-cache(\/|$)/,
+    /^\.cache(\/|$)/,
+    /^\.git(\/|$)/,
+    /^\.gitignore$/,
+    /\.DS_Store/,
+    /^\.rbenv-.*$/,
+    /^Gemfile$/,
+    /^Gemfile\.lock$/,
+    /~$/,
+    /(^|\/)\.?#/,
+    /^tmp\//
+  ]
