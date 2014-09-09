@@ -1,0 +1,17 @@
+section.news-item {
+  @include outer-container;
+
+  article {
+    margin-top: em(40);
+    padding: 3em;
+    h1 {
+      text-align: left;
+    }
+    header {
+      margin-top: 0;
+    }
+    footer {
+      font-style: italic;
+    }
+  }
+}

@@ -78,6 +78,10 @@ section.home {
       @include omega();
       min-height: 283px;
     }
+    
+    time {
+      font-style: italic;
+    }
 
     background-color: white;
     box-shadow: 0 1px 4px 1px $light-gray;
