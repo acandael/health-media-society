@@ -1,13 +1,9 @@
 section {
   @include outer-container;
-  padding: .75em;
-  @include media($medium-screen) {
-    padding: 0;
-  }
   article {
     background-color: white;
     box-shadow: 0 1px 4px 1px $light-gray;
-    margin-top: .75em;
+    margin-top: em(40);
     margin-bottom: em(20);
     padding: .75em;
     padding-top: 0;
