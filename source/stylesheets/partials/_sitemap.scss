@@ -1,0 +1,10 @@
+section.sitemap {
+  @include outer-container;
+  article {
+    padding: 3em;
+
+    ul {
+      @extend %default-ul;
+    }
+  }
+}
