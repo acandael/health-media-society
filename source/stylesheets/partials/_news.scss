@@ -1,0 +1,21 @@
+section.news {
+  @include outer-container;
+  
+
+  article {
+    padding: 3em;
+    overflow: hidden;
+    h1 { 
+      font-size: $base-font-size * 1.5;
+      text-align: left;
+    }
+
+    a.readmore { 
+      text-decoration: underline;
+    }
+
+    footer {
+      font-style: italic;
+    }
+  }
+}
