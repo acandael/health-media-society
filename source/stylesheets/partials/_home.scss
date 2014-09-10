@@ -72,6 +72,7 @@ section.home {
   } // end of hero
 
   .news {
+    position: relative;
     margin-top: em(20);
     @include media($medium-screen) {
       @include span-columns(4);
@@ -103,6 +104,12 @@ section.home {
           padding-left: 1em;
         }
       }
+    }
+    
+    .all {
+      position: absolute;
+      right: em(20);
+      bottom: 0px;
     }
   } // end of news
   .bullets {
