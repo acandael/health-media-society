@@ -9,6 +9,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Health, Media & Society<%= " - #{current_page.data.title}" || "The Middleman" if current_page.path != "index.html" %></title>
     <meta name="description" content="<%= current_page.data.description %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
