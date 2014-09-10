@@ -4,6 +4,7 @@ section.news-item {
   article {
     margin-top: em(40);
     padding: 3em;
+    @include clearfix;
     h1 {
       text-align: left;
     }
@@ -12,6 +13,12 @@ section.news-item {
     }
     footer {
       font-style: italic;
+    }
+
+    .content {
+      @include media($medium-screen) {
+        @include span-columns(8);
+      }
     }
   }
 }
