@@ -39,6 +39,12 @@ header.navigation {
     }
   }
 
+  .title {
+    max-height: $navigation-height;
+    line-height: $navigation-height;
+    color: $navigation-color;
+  }
+
   .navigation-menu-button {
     color: $navigation-color;
     cursor: pointer;
