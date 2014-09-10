@@ -2,26 +2,31 @@ section.news-item {
   @include outer-container;
 
   article {
-    margin-top: em(40);
-    padding: 3em;
-    @include clearfix;
+    @include span-columns(12);
+
     h1 {
       text-align: left;
-      margin-top: 0;
     }
-    header {
-      margin-top: 0;
-    }
+
     footer {
       font-style: italic;
     }
 
     .content {
       @include media($medium-screen) {
-        @include span-columns(8);
+        @include span-columns(8 of 12);
+      }
+    }
+
+    aside {
+      @include media($medium-screen) {
+        @include span-columns(4 of 12);
+        @include omega();
+
+        img {
+          float: right;
+        }
       }
     }
   }
-
-  
 }

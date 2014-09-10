@@ -1,13 +1,6 @@
 section.dutch {
   @include outer-container;
 
-
-  article {
-    h1 {
-      margin-top: 0;
-    }
-    padding: 3em;
-  }
   
   div.bullets {
     $icon-bullet-size: 3.5em;

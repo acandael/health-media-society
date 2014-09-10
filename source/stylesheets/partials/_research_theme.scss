@@ -2,16 +2,19 @@ section.research_theme {
   @include outer-container;
 
   article {
-    margin-top: em(40);
-    padding: 3em;
-    @include clearfix;
+    @include span-columns(12);
+
     h1 {
      text-align: left;
-     margin-top: 0;
     }
 
-    header {
-      margin-top: 0;
+    h2 {
+      margin-top: em(20);
+      margin-bottom: em(10);
+      @include media($medium-screen) {
+        font-size: $base-font-size * 2;
+        text-align: left;
+      }
     }
 
     li {
@@ -20,7 +23,26 @@ section.research_theme {
 
     .content {
       @include media($medium-screen) {
-        @include span-columns(8);
+        @include span-columns(8 of 12);
+      }
+    }
+
+    ul {
+      margin-top: em(10);
+    }
+    li {
+      margin-bottom: 1em;
+      line-height: .5em;
+    }
+
+    aside {
+      @include media($medium-screen) {
+        @include span-columns(4 of 12);
+        @include omega();
+
+        img {
+          float: right;
+        }
       }
     }
   }
