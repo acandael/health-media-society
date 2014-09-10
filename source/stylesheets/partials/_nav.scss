@@ -68,6 +68,14 @@ header.navigation {
     }
   }
 
+  .lang {
+    float: right;
+    text-align: right;
+    ul li a {
+      padding-right: 0px;
+    }
+  }
+
   ul#navigation-menu {    
     clear: both;
     -webkit-transform-style: preserve-3d; 
