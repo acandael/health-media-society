@@ -1,43 +1,27 @@
 section.research_theme {
- .hero {
-   margin-top: em(40);
-   margin-bottom: em(40);
-   @include clearfix;
-   background: white;
-   box-shadow: 0 1px 4px 1px $light-gray;
-   @include media($medium-screen) {
-     @include span-columns(12);
-   }
-   article {
-     background: inherit;
-     box-shadow: none;
-     @include media($medium-screen) {
-       @include span-columns(8 of 12);
-     }
-     h1 {
-       //font-size: $base-font-size * 1.5;
-       margin-top: 0;
-     }
+  @include outer-container;
 
-     a {
-       text-decoration: underline;
-     }
+  article {
+    margin-top: em(40);
+    padding: 3em;
+    @include clearfix;
+    h1 {
+     text-align: left;
+     margin-top: 0;
+    }
 
-     li {
-       line-height: $base-line-height * .5;
-     }
-   }
-   aside {
+    header {
+      margin-top: 0;
+    }
 
-     margin-top: em(40);
-     @include media($medium-screen) {
-       @include span-columns(4 of 12);
-     }
+    li {
+     line-height: $base-line-height * .5;
+    }
 
-     img {
-       border: 1px solid $light-gray;
-       padding: 3px;
-     }
-   }
- }
+    .content {
+      @include media($medium-screen) {
+        @include span-columns(8);
+      }
+    }
+  }
 }
