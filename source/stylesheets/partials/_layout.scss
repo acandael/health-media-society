@@ -150,6 +150,10 @@ article {
 
   header {
     margin-top: 0;
+    margin-bottom: 0;
+    @include media($medium-screen) {
+      margin-bottom: 2.25em;
+    }
   }
 }
 
