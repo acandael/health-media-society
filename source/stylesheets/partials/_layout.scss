@@ -138,7 +138,11 @@ article {
   @include clearfix;
   margin-top: em(40);
   margin-bottom: em(40);
-  padding: 3em;
+  padding: 2em;
+
+  @include media($medium-screen) {
+    padding: 3em;
+  }
 
   h1 {
     margin-top: 0;
