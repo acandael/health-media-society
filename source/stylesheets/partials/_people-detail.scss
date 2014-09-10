@@ -43,7 +43,9 @@ section.people-detail {
     }
     li {
       margin-bottom: 1em;
-      line-height: .5em;
+      @include media($medium-screen) {
+        line-height: .5em;
+      }
     }
   }
 }
