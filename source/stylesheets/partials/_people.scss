@@ -13,6 +13,7 @@ section.people {
   }
 
   .member {
+    text-align: center;
     @include media($medium-screen) {
       @include span-columns (3 of 12);
       @include omega(4n);
