@@ -132,10 +132,11 @@ section.home {
       background: white;
       padding: 1em;
       box-shadow: 0 1px 4px 1px $light-gray;
-      margin-bottom: em(20);
+      margin-bottom: em(40);
       @include media($large-screen) {
         @include span-columns(6);
         @include omega(2n);  
+        margin-bottom: 0;
       } 
     }
     
