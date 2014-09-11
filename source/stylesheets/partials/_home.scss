@@ -1,6 +1,6 @@
 section.home {
     .hero {
-    $hero-background-top: $green; 
+    $hero-background-top: lighten($green, 5); 
     $hero-background-bottom: adjust-hue($hero-background-top, -5);
     $hero-color: white;
     $gradient-angle: 10deg;
@@ -14,7 +14,7 @@ section.home {
 
     margin-top: em(20);
     margin-bottom: em(60);
-    padding-bottom: 1em;
+    //padding-bottom: 1em;
 
     @include media($medium-screen) {
       @include span-columns(8);
@@ -30,7 +30,7 @@ section.home {
 
     .hero-inner {
       @include outer-container;
-      @include clearfix;
+      //@include clearfix;
       padding: 2em;
       padding-bottom: 1em;
       margin: auto;
