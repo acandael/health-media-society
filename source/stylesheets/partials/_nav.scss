@@ -106,6 +106,13 @@ header.navigation {
     width: 100%;
     z-index: 9999;
 
+    &:first-child {
+      display: none;
+      @include media($medium-screen) {
+        display: inline;
+      }
+    }
+
     @include media ($horizontal-bar-mode) {
       background: transparent;
       display: inline;
