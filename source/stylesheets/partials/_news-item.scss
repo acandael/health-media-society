@@ -1,5 +1,4 @@
 section.news-item {
-  @include outer-container;
 
   article {
     @include span-columns(12);

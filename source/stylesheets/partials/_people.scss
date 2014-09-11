@@ -1,10 +1,10 @@
 section.people {
-  @include outer-container;
 
   article {
 
     h1 {
       margin-top: 0;
+      margin-bottom: em(5);
     }
     header {
       margin-top: 0;
