@@ -43,6 +43,9 @@ header.navigation {
     max-height: $navigation-height;
     line-height: $navigation-height;
     color: $navigation-color;
+    a {
+      color: $navigation-color;
+    }
     @include media($medium-screen) {
       display: none;
     }
