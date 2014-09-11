@@ -1,5 +1,4 @@
 section.home {
-  @include outer-container;
     .hero {
     $hero-background-top: $green; 
     $hero-background-bottom: adjust-hue($hero-background-top, -5);
