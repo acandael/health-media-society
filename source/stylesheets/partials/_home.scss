@@ -20,15 +20,16 @@ section.home {
       @include span-columns(8);
     }
 
-    .hero-logo img {
-      float: left;
-      display: none;
-      @include media($medium-screen) {
-        display: block;
-      }
-    }
 
     .hero-inner {
+      .hero-logo img {
+        float: left;
+        display: none;
+        @include media($medium-screen) {
+          display: block;
+          margin-top: em(50);
+        }
+      }
       @include outer-container;
       //@include clearfix;
       padding: 2em;
@@ -48,29 +49,32 @@ section.home {
       }
 
       .hero-copy {
-        text-align: left;
         @include media($medium-screen) {
-          text-align: center;
+          text-align: right;
+          overflow: hidden;
         }
         
         h1 {
           font-size: 1.5em;
           margin-bottom: .5em;
 
-          @include media($large-screen) {
+          @include media($medium-screen) {
+            text-align: center;
             font-size: 1.8em;
           }
         }
 
         p {
+          text-align: left;
           font-family: $serif;
           margin: auto;
-          margin-bottom: 3em; 
+          margin-bottom: 1em; 
           font-weight: 200;
           line-height: 1.4em;
 
           @include media($medium-screen) {
             font-size: 1.1em;
+            margin-left: em(20);
           }
         }
       }
