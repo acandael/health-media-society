@@ -57,6 +57,7 @@ section.home {
         h1 {
           font-size: 1.3em;
           margin-bottom: .5em;
+          text-align: left;
 
           @include media($medium-screen) {
             text-align: center;
