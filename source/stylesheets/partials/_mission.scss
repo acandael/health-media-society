@@ -1,6 +1,11 @@
 section.about {
   
   article {
+    h2 {
+      @include media($medium-screen) {
+        margin-bottom: em(10);
+      }
+    }
 
   }
 } // end of section
