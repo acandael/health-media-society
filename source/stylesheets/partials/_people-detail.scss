@@ -1,6 +1,5 @@
-section.people-detail {
-
   article {
+    @include outer-container;
     
     h1 {
       text-align: left;
@@ -51,5 +50,4 @@ section.people-detail {
       }
     }
   }
-}
 
