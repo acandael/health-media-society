@@ -22,7 +22,7 @@ div.where {
       @include media($medium-screen) {
         font-size: $base-font-size * 2;
       }
-      margin-bottom: em(10);;
+      margin-bottom: em(10);
     }
     $tab-border: 1px solid $tab-border-color;
     $tab-content-background: white;
@@ -111,9 +111,9 @@ div.where {
         left: 0;
         //padding: $base-line-height/2 $gutter/2;
 
-        p {
-          @include columns(2);
-        }
+        // p {
+        //   @include columns(2);
+        // }
       }
     }
   }
