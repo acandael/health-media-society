@@ -7,6 +7,18 @@ section.dutch {
         font-size: $base-font-size * 2.25;
       }
     }
+    .content {
+      @include media($medium-screen) {
+        @include span-columns(8);
+        padding-right: em(20);
+      }
+    }
+
+    aside {
+      @include media($medium-screen) {
+        @include span-columns(4);
+      }
+    }
   }
 
   
