@@ -1,8 +1,5 @@
-section.research_theme {
-
   article {
-    @include span-columns(12);
-
+    @include outer-container;
     h1 {
      text-align: left;
      font-size: $base-font-size * 1.3;
@@ -28,6 +25,8 @@ section.research_theme {
     .content {
       @include media($medium-screen) {
         @include span-columns(8 of 12);
+        padding-right: em(40);
+        margin-left: 0;
       }
     }
 
@@ -51,4 +50,3 @@ section.research_theme {
       }
     }
   }
-}
