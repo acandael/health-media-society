@@ -1,6 +1,6 @@
-section.about {
   
   article {
+    @include outer-container;
     h1 {
       @include media($medium-screen) {
         text-align: left;
@@ -24,4 +24,3 @@ section.about {
     }
 
   }
-} // end of section
