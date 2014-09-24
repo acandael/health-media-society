@@ -1,11 +1,4 @@
 article.mission {
-  @include outer-container;
-  margin-left: em(20);
-  margin-right: em(20);
-  @include media($medium-screen) {
-    margin-left: auto;
-    margin-right: auto;
-  }
   
   h1 {
     @include media($medium-screen) {

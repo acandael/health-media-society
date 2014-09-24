@@ -111,7 +111,7 @@ section.home {
       p {
         margin-left: 1.75em;
         margin-top: em(10);
-        @include media($medium-screen) {
+        @include media($large-screen) {
           padding-left: 1em;
         }
       }
@@ -126,7 +126,8 @@ section.home {
   .bullets {
     $icon-bullet-size: 3.5em;
 
-    //overflow: auto;
+    overflow: hidden;
+    clear: both;
     @include clearfix;
     margin-top: em(40);
     //margin-bottom: $base-line-height;
