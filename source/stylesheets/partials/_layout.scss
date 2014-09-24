@@ -151,10 +151,13 @@ article {
   margin-bottom: em(40);
   padding: 2em;
 
-
   @include media($medium-screen) {
-    margin-left: auto;
-    margin-right: auto;
+    padding: 3em;
+  }
+
+
+  @include media($large-screen) {
+    @include outer-container;
     padding: 3em;
   }
 
