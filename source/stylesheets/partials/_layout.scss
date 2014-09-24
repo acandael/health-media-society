@@ -155,7 +155,6 @@ article {
     padding: 3em;
   }
 
-
   @include media($large-screen) {
     @include outer-container;
     padding: 3em;
