@@ -1,4 +1,10 @@
 section.contact {
+  margin-left: em(20);
+  margin-right: em(20);
+  @include media($medium-screen) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .hero {
     margin-top: em(20);
     margin-bottom: em(20);
