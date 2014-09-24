@@ -53,7 +53,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :url_root, 'http://interpreter-violations-81175.bitballoon.com'
+set :url_root, 'http://www.healthmediasociety.net'
 
 activate :search_engine_sitemap
 
