@@ -143,9 +143,7 @@ article {
   margin-bottom: em(40);
   padding: 2em;
 
-  @include media($medium-screen) {
-    padding: 3em;
-  }
+  padding: 3em;
 
   h1 {
     margin-top: 0;
