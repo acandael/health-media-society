@@ -19,3 +19,5 @@ gem 'neat', '~> 1.6.0'
 
 gem 'middleman-search_engine_sitemap', '~> 1.1.0'
 gem "middleman-favicon-maker", "~> 3.7"
+gem 'image_optim'
+gem 'middleman-imageoptim', '~> 0.1.4'
