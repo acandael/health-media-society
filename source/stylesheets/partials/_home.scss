@@ -101,6 +101,7 @@ section.home {
     .news-inner {
       padding-top: .75em;
       padding-bottom: .75em;
+      margin-bottom: em(20);
       h2 {
         font-size: $base-font-size * 1.2;
         text-align: center;
@@ -111,16 +112,22 @@ section.home {
       p {
         margin-left: 1.75em;
         margin-top: em(10);
-        @include media($large-screen) {
-          padding-left: 1em;
+        @include media($medium-screen) {
+          padding-right: em(10);
         }
       }
     }
     
     .all {
-      position: absolute;
-      right: em(20);
-      bottom: 0px;
+      text-align: right;
+      margin-right: em(20);
+      //margin-bottom: em(20);
+      padding-bottom: em(10);
+      @include media($medium-screen) {
+        position: absolute;
+        right: em(20);
+        bottom: 0px;
+      }
     }
   } // end of news
   .bullets {
@@ -138,7 +145,7 @@ section.home {
       padding: 1em;
       box-shadow: 0 1px 4px 1px $light-gray;
       margin-bottom: em(40);
-      @include media($large-screen) {
+      @include media($medium-screen) {
         @include span-columns(6);
         @include omega(2n);  
         margin-bottom: 0;
