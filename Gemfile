@@ -18,3 +18,4 @@ gem 'bourbon', '~> 4.0.2'
 gem 'neat', '~> 1.6.0'
 
 gem 'middleman-search_engine_sitemap', '~> 1.1.0'
+gem "middleman-favicon-maker", "~> 3.7"
