@@ -1,7 +1,4 @@
-section.dutch {
-
-
-  article {
+  article.dutch {
     h1 {
       font-size: $base-font-size * 1.3;
       @include media($medium-screen) {
@@ -101,4 +98,4 @@ section.dutch {
       }
     }
   }
-}
+
