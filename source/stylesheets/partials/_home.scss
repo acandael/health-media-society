@@ -102,6 +102,11 @@ section.home {
       padding-top: .75em;
       padding-bottom: .75em;
       margin-bottom: em(20);
+      padding-left: 1em;
+      padding-right: 1em;
+      @include media($medium-screen) {
+        padding-left: 1.75em;
+      }
       h2 {
         font-size: $base-font-size * 1.2;
         text-align: center;
@@ -110,7 +115,6 @@ section.home {
         }
       }
       p {
-        margin-left: 1.75em;
         margin-top: em(10);
         @include media($medium-screen) {
           padding-right: em(10);
@@ -178,6 +182,10 @@ section.home {
       border-radius: 50%;
       width: $icon-bullet-size;
       height: $icon-bullet-size;
+      display: none;
+      @include media($medium-screen) {
+        display: block;
+      }
     }
 
     .bullet-icon-1 {
@@ -193,8 +201,10 @@ section.home {
     }
 
     .bullet-content {
-      margin-left: $icon-bullet-size *1.4;
       margin-bottom: 2em;
+      @include media($medium-screen) {
+        margin-left: $icon-bullet-size *1.4;
+      }
     }
 
     h2 {
