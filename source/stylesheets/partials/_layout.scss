@@ -24,10 +24,13 @@ section {
     margin-bottom: 2.5em;
     text-align: center;
   }
-  h1 {
-    color: darken($green, 10);
-  }
 }
+
+// Titles
+h1 {
+  color: darken($green, 10);
+}
+
 .push {
   height: 5em;
   @include media($large-screen) {
