@@ -31,6 +31,11 @@ h1 {
   color: darken($green, 10);
 }
 
+h2 {
+  color: darken($green, 5);
+}
+
+
 .push {
   height: 5em;
   @include media($large-screen) {
