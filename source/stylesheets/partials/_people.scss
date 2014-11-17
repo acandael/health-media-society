@@ -9,13 +9,18 @@ article.people {
   }
 
   p {
-    @include span-columns(6);
-    float: left;
+    @include media($large-screen) {
+      @include span-columns(6);
+      float: left;
+    }
   }
 
   img {
-    @include span-columns(6);
-    float: right;
+    display: none;
+    @include media(large-screen) {
+      @include span-columns(6);
+      float: right;
+    }
   }
 
 }
