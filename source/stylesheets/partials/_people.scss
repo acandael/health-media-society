@@ -8,6 +8,16 @@ article.people {
     margin-top: 0;
   }
 
+  p {
+    @include span-columns(6);
+    float: left;
+  }
+
+  img {
+    @include span-columns(6);
+    float: right;
+  }
+
 }
 
 .members {
