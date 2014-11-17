@@ -17,9 +17,10 @@ article.people {
 
   img {
     display: none;
-    @include media(large-screen) {
+    @include media($large-screen) {
       @include span-columns(6);
       float: right;
+      display: block;
     }
   }
 
