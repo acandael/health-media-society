@@ -75,7 +75,7 @@ configure :build do
   # set :http_prefix, "/Content/images/"
   
   #use image compression
-  # activate :imageoptim
+  activate :imageoptim
 
   activate :favicon_maker, :icons => {
     "_favicon_template.png" => [
