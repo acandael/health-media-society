@@ -8,7 +8,7 @@ article.people {
     margin-top: 0;
   }
 
-  p {
+  .content {
     @include media($large-screen) {
       @include span-columns(6);
       float: left;
