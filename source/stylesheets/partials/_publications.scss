@@ -16,4 +16,35 @@ section.publications {
       }
     }
   }
+
+  article.publication {
+    @include clearfix;
+    h1 {
+      font-size: $base-font-size * 1.3;
+      text-align: left;
+      margin-bottom: em(16);
+    }
+
+    p.date {
+      font-size: .8em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    header {
+      margin-bottom: em(24);
+      border-bottom: 1px solid $light-gray;
+    }
+
+    .content {
+      margin-bottom: em(24);
+      margin-top: em(24);
+    }
+
+    .download {
+      margin-top: em(24);
+      margin-bottom: 0;
+    }
+
+  }
 }
